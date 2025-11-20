@@ -1,0 +1,30 @@
+body{
+    margin:0;
+}
+
+.wrapper{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 25% 1fr / 13% 1fr;
+    grid-template-areas:
+    "hd hd" 
+    "nv mn"
+    "nv mn";
+    
+}
+
+header{
+    grid-area: hd;
+    background-color: aqua;
+}
+
+nav{
+    grid-area: nv;
+    background-color: blueviolet;
+}
+
+main{
+    grid-area: mn;
+    background-color:lightgreen
+}
