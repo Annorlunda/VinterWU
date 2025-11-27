@@ -16,12 +16,19 @@ body{
     "hd hd" 
     "nv mn"
     "nv mn";
-    
 }
 
 header{
     grid-area: hd;
     background-color: black;
+    display: flex;
+    justify-content: center; /*fixa, för ska inte vara så med loggan, de två under också*/
+    align-content: center;
+    align-items: center;
+    h1{
+        color: var(--page-light-green);
+        font-size: 400%;
+    }
 }
 .dm-serif-text-regular {
   font-family: "DM Serif Text", serif;
