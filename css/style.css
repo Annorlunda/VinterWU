@@ -25,7 +25,7 @@ header{
     justify-content: space-between;
     align-items: center;
     h1{
-        color: var(--page-light-green);
+        color: var(--page-green);
         font-size: 400%;
         justify-self: center;
     }
@@ -53,7 +53,7 @@ nav{
     flex-direction: column;
     a{
         font-size: 200%;
-        color: black;
+        color: var(--page-green);
         margin: 5%;
 
     }
@@ -64,8 +64,31 @@ main{
     background-color:var(--page-green)
 }
 
+#in_main{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;    
+
+}
 .in_sec{
+    width: 40%;
+    height: 45%;
     background-color: var(--page-light-green); /*fix!!, storlek och saker med sektioner i index.html*/
+}
+.in_sec_pic{
+    width: 40%;
+    height: 40%;
+    background-color: var(--page-light-green);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    img{
+        /*width: 90%;*/
+        height: 90%;
+    }
 }
 
 #cards-main{
