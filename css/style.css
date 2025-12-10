@@ -31,6 +31,10 @@ header{
     }
 }
 
+.box{
+    border-radius: 20px;
+}
+
 .LoggaFit{
     filter: invert(100%);
     height: 100%;
@@ -83,7 +87,7 @@ main{
     align-self: center;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: center; /*behövs den verkligen??*/
     align-items: center;
     img{
         /*width: 90%;*/
@@ -109,4 +113,16 @@ main{
         margin: 10px;
         height: 90%;
     }
+}
+
+#ab_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ab_art{
+    width: 95%;
+    height: 90%;
+    background-color: var(--page-light-green);
 }
