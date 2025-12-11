@@ -116,13 +116,35 @@ main{
 }
 
 #ab_main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "as1 art" 
+    "as2 art";
+    padding: 10px;
+}
+.ab_as{
+    background-color: var(--page-light-green);
+}
+#ab_as1{
+    grid-area: as1;
+    margin:0px 0px 10px 0px;
+    display:flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+}
+#ab_as2{
+    grid-area: as2;
+}
+#ab_art{
+    grid-area: art;
+    /*width: 95%;
+    height: 90%;*/
+    background-color: var(--page-light-green);
+    margin:0px 0px 0px 10px;
 }
 
-#ab_art{
-    width: 95%;
-    height: 90%;
-    background-color: var(--page-light-green);
+.nåt{
+    width: 80%;
 }
