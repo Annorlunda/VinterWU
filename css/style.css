@@ -95,7 +95,7 @@ main{
     }
 }
 
-#cards-main{
+#cards_main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -110,7 +110,7 @@ main{
   font-variation-settings:
     "wdth" 100;
 }
-.cards-sec{
+.cards_sec{
     width: 30%;
     height: 42%;
     background-color: var(--page-light-green);
@@ -144,7 +144,7 @@ main{
 #ab_main{
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 1fr 1fr; /*fixa för blir fel*/
+    grid-template-rows: 50% 50%; /*fixa för blir fel*/
     grid-template-areas: 
     "as1 art" 
     "as2 art";
@@ -152,25 +152,34 @@ main{
 }
 .ab_as{
     background-color: var(--page-light-green);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #ab_as1{
     grid-area: as1;
     margin:0px 0px 10px 0px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 #ab_as2{
     grid-area: as2;
 }
 #ab_art{
     grid-area: art;
-    /*width: 95%;
-    height: 90%;*/
     background-color: var(--page-light-green);
     margin:0px 0px 0px 10px;
+    padding: 10px;
 }
-
-.nåt{
-    width: 80%;
+.ab_p{
+    font-size: 1.15em;
+}
+.ab_pl{
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.ab_pic{
+    width: 70%;
+}
+#ab_h2{
+    line-height: 0.01em;
 }
