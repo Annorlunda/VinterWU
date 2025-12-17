@@ -2,11 +2,9 @@
     --page-green: #32cd32;
     --page-light-green:#f7fff7;
 }
-
 body{
     margin:0;
 }
-
 .wrapper{
     display:grid;
     height: 100vh;
@@ -17,7 +15,6 @@ body{
     "nv mn"
     "nv mn";
 }
-
 header{
     grid-area: hd;
     background-color: black;
@@ -30,11 +27,9 @@ header{
         justify-self: center;
     }
 }
-
 .box{
     border-radius: 20px;
 }
-
 .LoggaFit{
     filter: invert(100%);
     height: 100%;
@@ -43,13 +38,19 @@ header{
     filter:invert(0%);
     height: 100%;
 }
-
 .dm-serif-text-regular {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
 }
-
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600 /*hemsidan sa nåt mellan 100 och 900*/;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 nav{
     grid-area: nv;
     background-color: var(--page-light-green);
@@ -62,27 +63,46 @@ nav{
 
     }
 }
-
 main{
     grid-area: mn;
     background-color:var(--page-green)
 }
-
 #in_main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: 
+    "pic1 text1"
+    "text2 pic2";
+    gap:10px;
+    align-items: center;
+    justify-items: center;
+    /*display: flex;
     justify-content: space-evenly;
     align-content: space-evenly;
-    flex-wrap: wrap;    
-
+    flex-wrap: wrap;    */
+}
+#pic1{
+    grid-area: pic1;
+}
+#pic2{
+    grid-area: pic2;
+}
+#text1{
+    grid-area: text1;
+}
+#text2{
+    grid-area: text2;
 }
 .in_sec{
-    width: 40%;
-    height: 45%;
+   /* width: 40%;
+    height: 45%;*/
+    padding: 10px;
     background-color: var(--page-light-green); /*fix!!, storlek och saker med sektioner i index.html*/
 }
 .in_sec_pic{
-    width: 40%;
-    height: 40%;
+    /*width: 40%;
+    height: 40%;*/
     background-color: var(--page-light-green);
     align-self: center;
     display: flex;
@@ -90,25 +110,16 @@ main{
     align-content: center; /*behövs den verkligen??*/
     align-items: center;
     img{
-        /*width: 90%;*/
-        height: 90%;
+        width: 300px;
+        /*height: 90px;*/
     }
 }
-
 #cards_main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-evenly;
     
-}
-.roboto {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600 /*hemsidan sa nåt mellan 100 och 900*/;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 .cards_sec{
     width: 30%;
@@ -140,7 +151,6 @@ main{
         height: 90%;
     }
 }
-
 #ab_main{
     display: grid;
     grid-template-columns: 20% 80%;
