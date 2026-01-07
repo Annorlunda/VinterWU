@@ -14,6 +14,7 @@ body{
     "hd hd" 
     "nv mn"
     "nv mn";
+    background-color: var(--page-light-green);
 }
 header{
     grid-area: hd;
@@ -43,7 +44,7 @@ header{
   font-weight: 400;
   font-style: normal;
 }
-.roboto {
+.roboto{
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600 /*hemsidan sa nåt mellan 100 och 900*/;
@@ -70,7 +71,7 @@ main{
 #in_main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "pic1 text1"
     "text2 pic2";
@@ -80,7 +81,7 @@ main{
     /*display: flex;
     justify-content: space-evenly;
     align-content: space-evenly;
-    flex-wrap: wrap;    */
+    flex-wrap: wrap;   */ 
 }
 #pic1{
     grid-area: pic1;
@@ -95,10 +96,13 @@ main{
     grid-area: text2;
 }
 .in_sec{
-   /* width: 40%;
-    height: 45%;*/
+    /*width: 40%;
+    height: 40%;*/
     padding: 10px;
     background-color: var(--page-light-green); /*fix!!, storlek och saker med sektioner i index.html*/
+    p{
+        font-size: 0.9rem;
+    }
 }
 .in_sec_pic{
     /*width: 40%;
