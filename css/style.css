@@ -23,7 +23,7 @@ header{
     justify-content: space-between;
     align-items: center;
     h1{
-        color: var(--page-green);
+        color: var(--page-light-green);
         font-size: 400%;
         justify-self: center;
     }
