@@ -146,7 +146,7 @@ main{
 #ab_main{
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 50% 50%; /*fixa för blir fel*/
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     "as1 art" 
     "as2 art";
